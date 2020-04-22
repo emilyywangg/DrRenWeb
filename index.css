@@ -1,0 +1,538 @@
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Md';
+  src: url('fonts/HelveticaNeueLTPro-Md.eot?#iefix') format('embedded-opentype'),
+  url('fonts/HelveticaNeueLTPro-Md.otf')  format('opentype'),
+  url('fonts/HelveticaNeueLTPro-Md.woff') format('woff'),
+  url('fonts/HelveticaNeueLTPro-Md.ttf')  format('truetype'),
+  url('fonts/HelveticaNeueLTPro-Md.svg#HelveticaNeueLTPro-Md') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BeyondTheMountains';
+  src: url('fonts/BeyondTheMountains.eot?#iefix') format('embedded-opentype'),
+  url('fonts/BeyondTheMountains.otf')  format('opentype'),
+  url('fonts/BeyondTheMountains.woff') format('woff'),
+  url('fonts/BeyondTheMountains.ttf')  format('truetype'),
+  url('fonts/BeyondTheMountains.svg#BeyondTheMountains') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #2f2f2f;
+  font-family: 'HelveticaNeueLTPro-Md';
+}
+
+img {
+  vertical-align: baseline;
+}
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+a {
+  color: royalblue;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover, a:focus, a:active {
+  color: midnightblue;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+  list-style: none;
+}
+
+/*--------------------------------------------------------------
+# Helper Utilities
+--------------------------------------------------------------*/
+.flex {
+  display: flex !important;
+}
+
+@media screen and (min-width: 992px) {
+  .flex-lg {
+      display: flex !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Outer Container
+--------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  .outer-container {
+      width: calc(100% - 90px);
+      margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*
+# Header Bar Text
+--------------------------------*/
+.header-bar-text,
+.header-bar-email {
+  font-size: 12px;
+  color: #afafaf;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
+
+.header-bar-text {
+  margin-right: 42px;
+  padding-left: 50px;
+}
+
+.header-bar-text p {
+  margin: 0;
+  font-weight: bold;
+}
+
+
+/*
+# Header Bar Email
+--------------------------------*/
+.header-bar-email a {
+  color: #afafaf;
+  font-weight: bold;
+}
+
+
+/*
+# Header Bar search
+--------------------------------*/
+.btn-font{
+/* text-transform: uppercase; */
+font-size: 10px;
+text-align: center;
+}
+
+
+.header-bar-search {
+  margin-top: 10px;
+}
+
+.header-bar-search input[type="search"] {
+  width: 100%;
+  padding: 12px 20px;
+  border: 0;
+  border-bottom: 2px solid #d5d5d5;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1;
+  background: #f5f5f5;
+  color: #afafaf;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.header-bar-search input[type="search"]:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 768px){
+  .header-bar-search {
+      width: 300px;
+      margin-top: 0;
+  }
+
+  .header-bar-search input[type="search"] {
+      text-align: right;
+  }
+}
+
+
+
+/*
+# Site Branding
+--------------------------------*/
+.site-branding {
+  padding: 40px 0px 0px 0px;
+}
+
+.site-title {
+  font-size: 60px;
+  font-family: 'BeyondTheMountains';
+  padding-bottom: 25px;
+}
+
+.site-title a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.description{
+text-align: center;
+color: #afafaf;
+padding-left: 50px;
+padding-right: 50px;
+margin-bottom: 50px;
+}
+
+@media screen and (min-width: 576px){
+  .site-title {
+      font-size: 70px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .site-header {
+      margin-top: 12px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Homepage
+--------------------------------------------------------------*/
+/* .single-page {
+  padding-top: 165px;
+  padding-bottom: 100px;
+} */
+
+.content-wrap {
+  margin-top: 0px;
+  text-align: center;
+  color: #afafaf;
+}
+
+.content-wrap  {
+  font-size: 12px;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.content-wrap .entry-title {
+  margin-top: 80px;
+  font-family: 'BeyondTheMountains';
+  letter-spacing: 2px;
+  font-size: 30px;
+  color: #2f2f2f;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.content-wrap .tags-links {
+  margin-top: 35px;
+}
+
+.content-wrap .tags-links a {
+  margin-right: 15px;
+  font-size: 16px;
+  color: #afafaf;
+}
+
+.content-wrap .featured-image {
+  margin-top: 42px;
+}
+
+.content-wrap .featured-image img {
+  max-width: 90%;
+}
+
+.content-wrap .entry-content {
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.content-wrap .entry-content p {
+  font-size: 14px;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.blockquote-text {
+  padding-left: 114px;
+  margin-top: 84px;
+  font-size: 18px;
+  line-height: 2.2rem;
+  color: #2f2f2f;
+  text-align: left;
+  /* background: url("images/cocktaile.png") no-repeat left center; */
+}
+
+.blockquote-text p::first-letter {
+  font-size: 36px;
+}
+
+.content-wrap .entry-footer {
+  margin-top: 50px;
+}
+
+.post-share,
+.comments-count {
+  width: 100%;
+}
+
+
+.content-wrap a.read-more {
+  display: block;
+  width: 200px;
+  padding: 20px 0;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  background: #2f2f2f;
+}
+
+.comments-count {
+  font-size: 16px;
+  text-align: left;
+}
+
+.comments-count a {
+  color: #afafaf;
+}
+
+@media screen and (min-width: 992px){
+  .single-page {
+      padding-top: 0;
+  }
+
+  .post-share {
+      margin-top: 0;
+  }
+
+  .content-wrap a.read-more {
+      margin-top: 0;
+  }
+
+  .comments-count {
+      text-align: right;
+  }
+
+  .post-share,
+  .comments-count {
+      width: calc(50% - 100px);
+  }
+}
+
+/*--------------------------------------------------------------
+# Page Header
+--------------------------------------------------------------*/
+.page-header {
+  position: relative;
+  height: 385px;
+  margin-top: 40px;
+  background-size: cover;
+}
+
+.page-header h1 {
+  font-size: 72px;
+  font-family: 'BeyondTheMountains';
+  color: #fff;
+}
+
+.search-header{
+  margin-top: 20px;
+}
+
+.search-container{
+  margin-left: 20px;
+}
+
+.btn-details{
+  margin-left: 20px;
+}
+/*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
+.pagination {
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.pagination ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pagination li {
+  margin-right: 10px;
+}
+
+.pagination li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 11px;
+  color: #2f2f2f;
+  background: #f0f0f0;
+  text-decoration: none;
+}
+
+.pagination li a:hover,
+.pagination li.active a,
+.page-item.active .page-link {
+  color: #fff;
+  background: #2f2f2f;
+}
+
+.page-item.active .page-link {
+  z-index: 2;
+  color: #fff;
+  background-color: #818182;
+  border-color: #818182;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.sit-footer {
+  padding-top: 100px;
+  border-top: 1px solid #d8d8d8;
+}
+
+.footer-post-wrap {
+  margin-bottom: 60px;
+}
+
+.footer-post-wrap figure {
+  width: 185px;
+  margin: 0 30px 0 0;
+}
+
+.footer-post-wrap figure img {
+  display: block;
+  width: 100%;
+}
+
+.footer-post-cont {
+  width: calc(100% - 205px);
+}
+
+.footer-post-cont .posted-date {
+  margin-top: 20px;
+  font-size: 11px;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  color: #afafaf;
+}
+
+.footer-post-cont h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.footer-post-cont h3 a {
+  color: #2f2f2f;
+}
+
+.footer-post-cont .tags-links {
+  margin-top: 12px;
+}
+
+.footer-post-cont .tags-links a {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #afafaf;
+}
+
+.footer-post-cont .read-more {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #2f2f2f;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1200px){
+  .footer-post-wrap {
+      margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer Instagram
+--------------------------------------------------------------*/
+.footer-instagram {
+  margin-top: 60px;
+}
+
+.footer-instagram figure {
+  width: 33.333333%;
+  margin: 0;
+}
+
+.footer-instagram figure img {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px){
+  .footer-instagram figure {
+      width: 25%;
+      margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .footer-instagram figure {
+      width: 20%;
+      margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .footer-instagram figure {
+      width: auto;
+      margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .footer-instagram {
+      margin-top: 100px;
+  }
+
+  .footer-instagram figure img {
+      display: block;
+      width: 100%;
+      min-width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer Bar
+--------------------------------------------------------------*/
+.footer-bar {
+  padding: 22px 0;
+  background: #2f2f2f;
+  width: 100%;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 13px;
+  color: #b8b8b8;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-copyright p {
+      text-align: center;
+  }
+}

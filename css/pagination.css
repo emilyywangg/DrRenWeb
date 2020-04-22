@@ -1,0 +1,14 @@
+.page-item.active .page-link {
+    z-index: 2;
+    color: #fff;
+    background-color: #868e96;
+    border-color: #868e96;
+}
+
+.pagination {
+    display: flex;
+    padding-left: 38%;
+    list-style: none;
+    border-radius: .25rem;
+    margin-top: 50px;
+}
